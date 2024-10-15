@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BluBlu.🦜</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>BluBlu.🦜</h1>
+      <p>BluBlu is an Experimental GBT that fetches 🏴‍☠️ Movies / TV Shows 🏴‍☠️ </p>
+
+      <form onsubmit="sendRequest(event)">
+        <textarea placeholder="I want to watch John Wick 4" id="myprompt"></textarea
+        ><br />
+        <button type="submit">Squawk !</button>
+      </form>
+
+      <div id="iframeContainer" class="iframe-container">
+        <!-- The iframe will be inserted here -->
+      </div>
+
+     
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
