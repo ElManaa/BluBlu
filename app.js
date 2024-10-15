@@ -4,6 +4,12 @@ function sendRequest(event) {
     document.getElementById("loader").style.display = "inline-block"; 
     
     const text = document.getElementById("myprompt").value;
+    if (!text){
+      alert('Add a prompt, like : i want john wick 4')
+      document.getElementById("bttnsubmit").style.display = "inline"; 
+      document.getElementById("loader").style.display = "none"; 
+      return false
+    }
     const url = `https://hook.eu2.make.com/ns2ss2h7xcbvoz4s3hj93nguc9b98u1c?userPrompt=${encodeURIComponent(
       text
     )}`;
