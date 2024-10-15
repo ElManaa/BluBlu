@@ -6,13 +6,30 @@
     <title>BluBlu.🦜</title>
     <link href="main.css" rel="stylesheet" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-5Y44611ZP3"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-5Y44611ZP3");
+  </script>
   <body>
     <div class="container">
       <h1>BluBlu.🦜</h1>
-      <p>BluBlu is an Experimental GBT that fetches 🏴‍☠️ Movies / TV Shows 🏴‍☠️ </p>
+      <p>BluBlu is an Experimental GBT that fetches 🏴‍☠️ Movies / TV Shows 🏴‍☠️</p>
 
       <form onsubmit="sendRequest(event)">
-        <textarea placeholder="I want to watch John Wick 4" id="myprompt"></textarea
+        <textarea
+          placeholder="I want to watch John Wick 4"
+          id="myprompt"
+        ></textarea
         ><br />
         <button type="submit">Squawk !</button>
       </form>
@@ -20,8 +37,6 @@
       <div id="iframeContainer" class="iframe-container">
         <!-- The iframe will be inserted here -->
       </div>
-
-     
     </div>
     <script src="app.js"></script>
   </body>
